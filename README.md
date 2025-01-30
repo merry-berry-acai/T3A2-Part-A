@@ -1,61 +1,92 @@
-# Smoothie & Açaí Shop App
+# Smoothie & Açaí Shop Online Ordering App
 
-## R1. Description
+## Table of Contents
 
-### Purpose
+- [Smoothie \& Açaí Shop Online Ordering App](#smoothie--açaí-shop-online-ordering-app)
+  - [Table of Contents](#table-of-contents)
+  - [Project Overview](#project-overview)
+    - [Tech Stack](#tech-stack)
+  - [Dataflow Diagram](#dataflow-diagram)
+    - [Key Components](#key-components)
+  - [Application Architecture](#application-architecture)
+    - [Layers](#layers)
+  - [User Stories](#user-stories)
+    - [Customer Perspective](#customer-perspective)
+    - [Shop Owner Perspective](#shop-owner-perspective)
+  - [Wireframes](#wireframes)
+    - [Screenshots](#screenshots)
+  - [Trello Board](#trello-board)
+    - [Board Structure](#board-structure)
 
-This online ordering app will help the smoothie and açaí shop reach a wider customer base, boost sales, and enhance customer satisfaction.
+## Project Overview
 
-* **Attract New Customers:** An online presence can help the shop connect with customers beyond the immediate area. Many people, especially the target audience of health-conscious individuals, are accustomed to online ordering and appreciate the convenience it offers.
-* **Increase Efficiency:** This app can simplify order processing and reduce wait times for customers.
-* **Boost Sales:** Online ordering makes it easier for customers to place orders, which can lead to increased order frequency and order sizes. The convenience of ordering from anywhere at any time can encourage impulse purchases.
-* **Enhance Customer Experience:**  This app will provide customers with a user-friendly platform to browse the menu, customise orders, and track order status. This can lead to greater customer satisfaction and loyalty.
-* **Provide Valuable Data:**  This app can collect valuable customer data, such as order history and preferences, which can be used to tailor marketing campaigns, optimise menu offerings, and improve overall business strategies.
-
-### Functionality/Features
-
-* Browse the menu with detailed descriptions and mouth-watering images.
-* Customise orders with various sizes, toppings, and add-ins.
-* Securely place orders and pay online.
-* Track order status in real-time.
-* Easy navigation and user-friendly interface.
-
-### Target Audience
-
-* Health-conscious individuals looking for a quick and easy way to order nutritious meals.
-* Busy professionals who want to grab a healthy meal on the go.
-* Students and local residents in the \[Shop Location] area.
+The Smoothie & Açaí Shop Online Ordering App aims to enhance customer experience and streamline operations for a health-focused retail business. The app provides a user-friendly platform for customers to browse menus, customise orders, and track their orders, while offering efficient management tools for shop owners.
 
 ### Tech Stack
 
-* Front-end: React
-* Back-end: Node.js with Express.js
-* Database: MongoDB
-* Version Control: Git
-* Deployment: \[Cloud Hosting Service - e.g., Heroku, AWS]
+- **Front-end**: React.js
+- **Back-end**: Node.js & Express
+- **Database**: MongoDB
+- **Design Tools**: Figma
 
-## R2. Dataflow Diagram
+## Dataflow Diagram
 
-\[Insert Dataflow Diagram - Create a visual representation of how data flows through the application, including user interactions, data processing, and database interactions.]
+The DFD outlines the flow of data within the system, showing interactions between users and the application layers.
 
-## R3. Application Architecture Diagram
+### Key Components
 
-\[Insert Application Architecture Diagram - Create a diagram that illustrates the components of the application (front-end, back-end, database) and how they interact with each other.]
+1. **User Interaction Layer**: Front-end requests initiated by users.
+2. **Back-end Processing**: Node.js processes requests and interacts with MongoDB.
+3. **Database Layer**: Storage of menu items, orders, and user information.
 
-## R4. User Stories
+[Insert Diagram Here]
 
-* As a customer, I want to be able to browse the menu and view detailed descriptions and images of each item so that I can make an informed decision.
-* As a customer, I want to be able to customise my order with different sizes, toppings, and add-ins so that I can personalise my meal.
-* As a customer, I want to be able to place an order and pay securely online so that I can avoid waiting in line.
-* As a customer, I want to be able to track the status of my order so that I know when it will be ready.
-* As a shop owner, I want to be able to manage the menu and update items so that I can keep the information current.
-* As a shop owner, I want to be able to view and process orders efficiently so that I can fulfil them quickly.
+## Application Architecture
 
-## R5. Wireframes
+This section details the system's layered architecture, ensuring separation of concerns and scalability.
 
-\[Insert Wireframes - Create wireframes for multiple screen sizes (desktop, tablet, mobile) using industry-standard software (e.g., Figma, Balsamiq) to illustrate the layout and user flow of the application.]
+### Layers
 
-## R6. Trello Board Screenshots
+1. **Presentation Layer**: React.js handles user interface.
+2. **Business Logic Layer**: Node.js manages application logic.
+3. **Data Access Layer**: MongoDB stores data with Mongoose as ORM.
 
-\[Insert Trello Board Screenshots - Capture screenshots of the Trello board throughout the project to document the progress and task management.]
+[Insert Diagram Here]
+
+## User Stories
+
+Categorised by user roles, these stories highlight key functionalities.
+
+### Customer Perspective
+
+- As a customer, I want to browse the menu to explore available smoothies and açaí bowls.
+- As a customer, I want to customise my order to include specific add-ons.
+- As a customer, I want to track my order status to know when it's ready.
+
+### Shop Owner Perspective
+
+- As a shop owner, I want to manage menu items to update prices and descriptions.
+- As a shop owner, I want to view sales reports to analyse revenue trends.
+
+## Wireframes
+
+Visual designs for key app screens ensure an intuitive user experience.
+
+### Screenshots
+
+1. **Menu Browsing**
+2. **Order Customisation**
+3. **Checkout Process**
+4. **Order Tracking**
+
+## Trello Board
+
+Organised task management using Trello demonstrates efficient project tracking.
+
+### Board Structure
+
+- Lists: To Do, In Progress, Testing, Done
+- Cards: Feature tasks (e.g., "Implement menu browsing")
+
+[Insert Screenshots Here]
 
