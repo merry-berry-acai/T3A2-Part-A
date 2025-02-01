@@ -37,7 +37,7 @@ Emily, 28, is a fitness enthusiast who appreciates quick and nutritious eating o
 ## Persona 3: - Shop Owner Maria
 Maria is the owner of the smoothie and açaí shop. She wants to manage orders efficiently and understand customer preferences.
 
-## User Story 6: Dashboard for Order Management
+## User Story 5: Dashboard for Order Management
 
 - What: In order to effectively prioritize and complete incoming orders, I, Maria, need a dashboard that allows me to view and manage them in real-time.
 
@@ -45,3 +45,23 @@ Maria is the owner of the smoothie and açaí shop. She wants to manage orders e
 - Why: To increase customer satisfaction and cut down on wait times.
 
 - Revision: Customer notes, order history, and priority flags for large orders were added to the dashboard, which had previously simply displayed basic order details.
+
+## Persona 4: First-Time User (Sarah)
+Sarah is a 22-year-old college student who is new to the app and wants to explore its features.
+
+## User Story 5: Tutorial for Onboarding
+
+- What: As Sarah, I would need a brief tutorial to show me how to browse, modify, and place an order as soon as I launch the app.
+
+
+- Why: To feel comfortable with the app without requiring outside assistance.
+
+- Revision: To improve user engagement, the tutorial's interactive features and animations were added after it was originally primarily text-based.
+
+## User Story 6: Discounts and Promotions
+
+- What: In order to save money on my first order, I, Sarah, would want to view any promos and discounts that are available.
+
+- Why: To get me to download and use the app.
+
+- Revision: To improve visibility, promotions were moved from the menu to the homepage banner.
