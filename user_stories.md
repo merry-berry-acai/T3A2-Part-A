@@ -23,3 +23,25 @@ Emily, 28, is a fitness enthusiast who appreciates quick and nutritious eating o
 - Why: To know when my order would be ready and to avoid needless waiting.
 
 - Revision: The tracking feature was improved for a better user experience by adding a progress bar and notifications.
+
+## Persona 2 - John
+## User-story4: Quick Reorder
+
+- What: In order to save time when personalizing my order, I, John, would like to be able to quickly reorder my favorite things from the past with just a single click.
+
+- Why: To ensure that I receive my favorite meal as soon as possible and to save time.
+
+
+- Revision: To make it easier to access, the reorder option was moved from the account settings to the homepage.
+
+## Persona 3: - Shop Owner Maria
+Maria is the owner of the smoothie and açaí shop. She wants to manage orders efficiently and understand customer preferences.
+
+## User Story 6: Dashboard for Order Management
+
+- What: In order to effectively prioritize and complete incoming orders, I, Maria, need a dashboard that allows me to view and manage them in real-time.
+
+
+- Why: To increase customer satisfaction and cut down on wait times.
+
+- Revision: Customer notes, order history, and priority flags for large orders were added to the dashboard, which had previously simply displayed basic order details.
