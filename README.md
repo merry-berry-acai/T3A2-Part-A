@@ -15,6 +15,10 @@
     - [Shop Owner Perspective](#shop-owner-perspective)
   - [Wireframes](#wireframes)
     - [Screenshots](#screenshots)
+  - [Git Workflow Using Git Flow](#git-workflow-using-git-flow)
+    - [Main Branches](#main-branches)
+    - [Supporting Branches](#supporting-branches)
+    - [Workflow](#workflow)
   - [Trello Board](#trello-board)
     - [Board Structure](#board-structure)
 
@@ -78,6 +82,35 @@ Visual designs for key app screens ensure an intuitive user experience.
 2. **Order Customisation**
 3. **Checkout Process**
 4. **Order Tracking**
+
+## Git Workflow Using Git Flow
+
+The Git Flow workflow is used to manage source code, branching, and releases. Here's a description of the workflow:
+
+### Main Branches
+
+**main:** This branch contains the official release history.
+**develop:** This is the main development branch from where all feature branches are branched from.
+
+### Supporting Branches
+
+**feature:** Feature branches are created for each new feature or task. They are branched from develop and merged back into develop after completion.
+**release:** Release branches are created to prepare for a new release. They are branched from develop and merged into main and develop after release.
+**hotfix:** Hotfix branches are created to fix bugs in production. They are branched from main and merged back into main and develop after the fix.
+
+### Workflow
+
+- New features are developed on feature branches branched from the develop branch.
+- Once completed, feature branches are merged back into the develop branch.
+- When ready for release, a release branch is created from the develop branch.
+- After testing, the release branch is merged into the main branch, and also back into develop.
+- If a bug is found in the main branch, it is addressed by creating a hotfix branch.
+- After the bug is fixed, the hotfix branch is merged into main and also develop.
+
+- **Version Control:** Git is used for version control, and all code changes are made using commits and pull requests.
+- **Team Collaboration:** Git workflow provides a structured way for all team members to collaborate efficiently on the project.
+- **Source Control:** This workflow ensures proper source control methodology and maintains a clean and organised project.
+- **Branching Strategy:** Using a structured branching strategy like Git Flow helps manage code, facilitate collaboration, and ensure a stable and well maintained repository.
 
 ## Trello Board
 
