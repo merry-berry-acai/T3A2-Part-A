@@ -112,7 +112,7 @@ The Git Flow workflow is used to manage source code, branching, and releases. He
 - **Source Control:** This workflow ensures proper source control methodology and maintains a clean and organised project.
 - **Branching Strategy:** Using a structured branching strategy like Git Flow helps manage code, facilitate collaboration, and ensure a stable and well maintained repository.
 
-![GitFlow Diagram](git-flow.png)
+![GitFlow Diagram](./docs/git-flow.png)
 
 ## Trello Board
 
