@@ -9,7 +9,9 @@
   - [Dataflow Diagram](#dataflow-diagram)
     - [Key Components](#key-components)
   - [Application Architecture](#application-architecture)
-    - [Layers](#layers)
+    - [Presentation Layer](#presentation-layer)
+    - [Business Logic Layer](#business-logic-layer)
+    - [Data Access Layer](#data-access-layer)
   - [User Stories](#user-stories)
     - [Customer Perspective](#customer-perspective)
     - [Shop Owner Perspective](#shop-owner-perspective)
@@ -47,13 +49,25 @@ The DFD outlines the flow of data within the system, showing interactions betwee
 
 ## Application Architecture
 
-This section details the system's layered architecture, ensuring separation of concerns and scalability.
+The Application Architecture Diagram (AAD) illustrates the different components of the application and how they interact. The application follows a layered architecture to ensure a separation of concerns and scalability. Here's a detailed explanation:
 
-### Layers
+### Presentation Layer
 
-1. **Presentation Layer**: React.js handles user interface.
-2. **Business Logic Layer**: Node.js manages application logic.
-3. **Data Access Layer**: MongoDB stores data with Mongoose as ORM.
+This layer is the front-end of the application, built with React.js.
+It handles user interface and user experience.
+It is responsible for displaying information and receiving user inputs.
+
+### Business Logic Layer
+
+This layer is the back-end of the application, built using Node.js and Express.
+It manages the core functionality of the application.
+It handles data validation, processing, and interaction with the data access layer.
+
+### Data Access Layer
+
+- This layer manages how data is stored and retrieved from the database.
+- It uses MongoDB to store the data with Mongoose as the Object Relational Mapper (ORM).
+- It is responsible for handling database operations such as CRUD (Create, Read, Update, Delete).
 
 [Insert Diagram Here]
 
