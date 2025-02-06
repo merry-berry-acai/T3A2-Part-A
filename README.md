@@ -14,6 +14,7 @@
   - [User Stories](#user-stories)
     - [Customer Perspective](#customer-perspective)
     - [Shop Owner Perspective](#shop-owner-perspective)
+  - [Customer Flow](#customer-flow)
   - [Wireframes](#wireframes)
     - [Screenshots](#screenshots)
   - [Git Workflow Using Git Flow](#git-workflow-using-git-flow)
@@ -86,6 +87,10 @@ Categorised by user roles, these stories highlight key functionalities.
 - As a shop owner, I want to manage menu items to update prices and descriptions.
 - As a shop owner, I want to view sales reports to analyse revenue trends.
 
+## Customer Flow
+
+The sequence of actions taken by a customer to engage with the web application.
+
 ## Wireframes
 
 Visual designs for key app screens ensure an intuitive user experience.
@@ -138,4 +143,3 @@ Organised task management using Trello demonstrates efficient project tracking.
 - Cards: Feature tasks (e.g., "Implement menu browsing")
 
 [Insert Screenshots Here]
-
