@@ -4,7 +4,7 @@
 
 Customers visit the Merry Berry web application from their browser. They can either sign up or continue as a guest.
 
-If signing up, customers provide their name, email, and phone number and set a password. Creating an account allows for faster checkout, order history tracking, and saved preferences for future orders.
+Customers can sign up using Social Login (Google, Apple, etc.) or Passkeys for authentication. This eliminates the need to store passwords and enhances security by using OAuth or public key authentication.
 
 ### 2. Browsing the Menu and Selecting Items
 
@@ -22,9 +22,9 @@ During checkout, customers select a payment method , including Credit/Debit Card
 
 ### 4. Order Confirmation and Preparation
 
-Once the order is placed, customers receive an order confirmation message on-screen and via email or SMS.
+Once the order is placed, customers receive an order confirmation message on-screen and via email.
 
-An order number is assigned for easy identification. Customers can track the real-time status of their order, progressing through the following stages: Order placed, Being prepared, and Ready for pickup.
+An order number is assigned for easy identification. Customers can track the status of their order with simulated timer schemes, progressing through the following stages: Order placed, Being prepared, and Ready for pickup.
 
 ### 5. Pickup Process
 
