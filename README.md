@@ -470,10 +470,37 @@ Screenshots of our meticulously crafted wireframes, showcasing the planning prin
 
 These wireframes provide a clear blueprint for an intuitive, user-friendly, and responsive application, reflecting a high level of design foresight and strategic planning essential for a High Distinction project.
 
-### Board Structure
+## 📌 GitHub Projects Board: Kanban for Agile Project Management
 
-- Lists: To Do, In Progress, Testing, Done
-- Cards: Feature tasks (e.g., "Implement menu browsing")
+To ensure efficient project tracking and demonstrate our commitment to agile methodologies, we have implemented a Kanban-style GitHub Projects board for task management throughout the development of the Merry Berry Smoothie & Açaí Shop application.  Our GitHub Projects board serves as a central hub for visualizing workflow, managing tasks, and fostering team collaboration, directly contributing to the organized and timely progress of our project.
 
-[Insert Screenshots Here]
+### 📋 Board Structure & Standards
 
+To maintain clarity, consistency, and effective project management, we have established and rigorously adhered to the following standards for our GitHub Projects board usage:
+
+*   **Card Naming Convention:**  Cards are consistently named using the format `[Feature Area] - [Concise Task Description]`. This ensures that each task is clearly identifiable and categorized by its relevant feature area.  *(Example: `Menu Browsing - Implement Category Filtering`, `Authentication - Set up JWT Login`)*.
+*   **Label Usage:**  We utilize a comprehensive set of labels to categorize tasks by functional area and priority. Our labels include:
+    *   `Frontend`: Tasks related to front-end development.
+    *   `Backend`: Tasks related to back-end development.
+    *   `Database`: Tasks involving database design or implementation.
+    *   `UI/UX`: Tasks focused on user interface and user experience design.
+    *   `Bug`:  Cards representing bug fixes.
+    *   `Enhancement`: Cards for feature enhancements or improvements.
+    *   `Urgent`: Tasks requiring immediate attention.
+    *   `High Priority`: Important tasks that need to be addressed promptly.
+*   **Assignee Usage:**  Every GitHub Projects card is assigned to a specific team member who is directly responsible for completing the task. This ensures clear accountability and ownership of all project tasks.
+*   **Workflow - List Structure:**  Our board follows a standard Kanban workflow using the following lists to represent task status:
+    *   `To Do`:  For tasks that are yet to be started and are prioritized for upcoming work.
+    *   `In Progress`:  For tasks that are currently being actively worked on by assigned team members.
+    *   `Testing`:  For tasks that have been developed and are now undergoing testing and quality assurance.
+    *   `Done`:  For tasks that have been successfully completed, tested, and are considered finished.
+
+By consistently applying these standards, we ensure our GitHub Projects board is not only a task repository but a dynamic and actively managed tool for effective project execution.
+
+### 🖼️ GitHub Projects Screenshots
+
+Screenshots of our actively managed GitHub Projects board, demonstrating adherence to the standards outlined above and showcasing the project's task workflow, are available in the [`docs/kanban/`](./docs/kanban/) directory.  These screenshots visually evidence our commitment to organized project management and the consistent application of our defined GitHub Projects standards throughout the development process.  They illustrate card naming conventions, label usage, assignee visibility, and the movement of tasks across the Kanban workflow lists, reflecting a dynamic and actively managed project.
+
+### 🚀 Reflection on GitHub Projects Usage
+
+Utilizing GitHub Projects has significantly improved our project management by providing a clear visual overview of task progress and responsibilities. The Kanban board structure has facilitated better team collaboration and ensured we are consistently tracking and managing our tasks throughout the development process, contributing to a more organized and efficient workflow.  GitHub Projects has been instrumental in maintaining project visibility, promoting accountability, and streamlining our agile development approach.
