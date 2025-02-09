@@ -24,13 +24,13 @@
   - [🎯 Target Audience](#target-audience)
   - [📐 Wireframes](#wireframes)
     - [🖼️ Screenshots](#screenshots)
-  - [📌 Trello Board](#trello-board)
+  - [📌 GitHub Projects Board](#GitHub Projects-board)
     - [📋 Board Structure](#board-structure)
 
 
-# Project Overview
+## Project Overview
 
-# 🎯 Purpose of the **Merry Berry Smoothie & Açaí Shop** Project
+## 🎯 Purpose of the **Merry Berry Smoothie & Açaí Shop** Project
 
 **Merry Berry Smoothie & Açaí Shop** is a full-stack solution designed to enhance the online ordering experience for health-conscious customers. The project’s main objective is to offer a platform where customers can easily browse, customize, order, and enjoy a variety of smoothies, açaí bowls, and other health-focused snacks—all with a few clicks. With this platform, we aim to provide not only delicious and nutritious options but also a smooth and user-friendly digital experience that simplifies the ordering process.
 
@@ -74,7 +74,7 @@ Enables customers to easily explore our offerings, directly supporting Objective
 - **Pricing Information:** Base price is clearly displayed, and additional costs (e.g., extra toppings) are shown before checkout.
 - **Availability Status:** Only items that are currently in stock will be shown to customers.
 
-## 🥤 Customize Orders
+### 🥤 Customise Orders
 **Feature:**
 Customers can personalize their orders based on preferences such as size, toppings, and special instructions before adding items to their cart.
 
@@ -83,7 +83,7 @@ Customers can personalize their orders based on preferences such as size, toppin
 - **Topping Choices:** Customers can choose from a predefined list of toppings, such as chia seeds, honey, or protein powder, with pricing shown for each.
 - **Special Instructions:** Customers can add free-text notes (e.g., "Less ice, please").
 
-## 🛒 Persistent Shopping Cart (Frontend State)
+### 🛒 Persistent Shopping Cart (Frontend State)
 **Feature:**
 Customers can build their cart dynamically, and the cart remains available even if they leave the page.
 
@@ -96,7 +96,7 @@ Customers can build their cart dynamically, and the cart remains available even 
   - Modify existing items (e.g., changing the quantity or toppings).
 - **Cart Summary:** Displays itemized costs, subtotal, and estimated total before checkout.
 
-## 🛍️ Order Management & History
+### 🛍️ Order Management & History
 **Feature:**
 Users can place orders and track their past purchases in their account dashboard.
 
@@ -109,7 +109,7 @@ Users can place orders and track their past purchases in their account dashboard
   - Order date and time
 - **Order History:** Users can view all past orders and quickly reorder a previous purchase with one click.
 
-## 📊 Real-Time Order Tracking
+### 📊 Real-Time Order Tracking
 **Feature:**
 After placing an order, users can track its status in real time.
 
@@ -121,7 +121,7 @@ After placing an order, users can track its status in real time.
   - **Out for Delivery:** If delivery is enabled, customers receive real-time delivery updates.
 - **Live Updates:** Users can refresh their order page or receive push notifications for updates.
 
-## 🔒 Secure Payment Processing
+### 🔒 Secure Payment Processing
 **Feature:**
 Customers can securely complete their purchases using a reliable third-party payment processor.
 
@@ -133,7 +133,7 @@ Customers can securely complete their purchases using a reliable third-party pay
   - Digital wallets (Apple Pay, Google Pay)
 - **Order Confirmation:** After a successful transaction, users receive an email confirmation and receipt.
 
-## 💰 Promo Codes & Discounts
+### 💰 Promo Codes & Discounts
 **Feature:**
 Customers can apply promo codes to receive discounts during checkout.
 
@@ -145,7 +145,7 @@ Customers can apply promo codes to receive discounts during checkout.
 - **Automatic Discount Application:** If the promo code is valid, the system deducts the discount from the total price.
 - **Error Handling:** If a code is invalid or expired, users get a clear message explaining why it cannot be applied.
 
-## ⭐ User Reviews & Ratings
+### ⭐ User Reviews & Ratings
 **Feature:**
 Customers can leave feedback on menu items by submitting a star rating and written review.
 
@@ -157,14 +157,14 @@ Customers can leave feedback on menu items by submitting a star rating and writt
   - The menu item being reviewed
 - **Public Visibility:** Reviews appear on the menu item’s page for other customers to see.
 
-## 🔐 Authentication (JWT & OAuth2)
+### 🔐 Authentication (JWT & OAuth2)
 
 **Feature:**
 Secure user authentication using JWT for stateless sessions and OAuth2 for third-party login integration.
 
 **Details:**
 
-### **JWT Authentication**
+#### **JWT Authentication**
 - **User Registration:** New users can create an account by providing necessary information such as email, username, and password.
 - **Login:** Existing users can log in using their username/email and password. Upon successful login, a **JWT token** is generated and sent back to the user.
   - The JWT token contains:
@@ -175,7 +175,7 @@ Secure user authentication using JWT for stateless sessions and OAuth2 for third
 - **Token Validation:** For each subsequent request, the user sends the token in the HTTP Authorization header as `Bearer <token>`. The backend validates the token, ensuring it's not expired or tampered with.
 - **Secure Routes:** Routes requiring authentication (such as placing an order or viewing order history) check if the request includes a valid JWT token.
 
-### **OAuth2 Authentication**
+#### **OAuth2 Authentication**
 - **Third-Party Login Integration:** Users can log in using their **Google**, **Facebook**, or other OAuth2-supported platforms.
 - **OAuth2 Flow:** The application follows the standard OAuth2 authorization flow:
   1. **Authorization Request:** The user is redirected to the third-party platform’s login page.
@@ -184,30 +184,30 @@ Secure user authentication using JWT for stateless sessions and OAuth2 for third
 - **Token Handling:** The application stores the OAuth2 access token, either in local storage or session storage, to manage the user session.
 - **Account Linking:** If the user already has an account, they can link their third-party OAuth2 login to their existing account for future logins.
 
-### **Secure Routes and Role-Based Access**
+#### **Secure Routes and Role-Based Access**
 - **JWT Middleware:** The backend checks for a valid JWT token for any protected routes. If the token is invalid or expired, the user is denied access and asked to log in again.
 - **Role-Based Access:** Users with different roles (e.g., admin, regular user) have access to different routes:
   - Admins can view and manage all orders and users.
   - Regular users can only view and manage their own orders.
 
-### **Logout:**
+#### **Logout:**
 - **JWT Logout:** When the user logs out, the token is deleted from the local storage or invalidated by the backend if using a token blacklist.
 - **OAuth2 Logout:** The user is logged out from the OAuth2 provider (e.g., Google) and their session is ended in the application.
 
-### **Token Expiry & Refresh Tokens**
+#### **Token Expiry & Refresh Tokens**
 - **Access Token Expiry:** JWT tokens typically have a short lifespan (e.g., 15 minutes). After expiration, the user must either log in again or use a **refresh token**.
 - **Refresh Tokens:** A refresh token is issued alongside the access token and is used to obtain a new access token when the original expires.
   - Refresh tokens are stored securely and can be exchanged for a new access token by sending the refresh token to a secure endpoint.
 
 ---
 
-### Summary of Authentication Features:
+#### Summary of Authentication Features:
 ✔ **JWT Authentication** ensures stateless, secure sessions for users.  
 ✔ **OAuth2 Integration** allows third-party logins for easier user access.  
 ✔ **Token Expiry & Refresh** ensures a smooth user experience with minimal disruptions.  
 ✔ **Role-Based Access** secures the app by restricting routes based on user roles. 
 
-## 📱 Responsive Design
+### 📱 Responsive Design
 **Feature:**
 The website is optimized for a seamless shopping experience across mobile, tablet, and desktop.
 
@@ -295,6 +295,7 @@ We have chosen `React.js` for the front-end to build a dynamic and responsive us
 `Node.js with Express` provides a scalable and efficient back-end, ideal for handling real-time order updates and secure transactions. 
 `MongoDB`'s NoSQL nature allows for flexible data schemas, accommodating the evolving needs of our menu and user data. 
 `Figma` was selected for collaborative and iterative wireframing and UI design.
+
 
 
 ## 🗺️ Dataflow Diagram: Visualizing Data Flow within the Merry Berry System
@@ -424,6 +425,7 @@ The complete Application Architecture Diagram, visually representing these layer
 - **Why:** To save money on my first order and feel like I'm getting good value as a new user, **incentivizing me to place my first order and explore the app's offerings.  As a budget-conscious student, discounts and promotions are a significant factor in my purchasing decisions, and clear visibility of these offers will encourage me to try Merry Berry.**
 
 - **Revision:**  To enhance the visibility of promotions and attract new users like Sarah, discounts and promotional banners were strategically moved from a less prominent location within the menu section to a highly visible position at the top of the homepage. This placement ensures that first-time users are immediately aware of any available offers, maximizing the impact of promotions on app downloads and initial order conversions.  We also made the promotional banners visually appealing and clearly indicated the terms and conditions of each offer.
+
 
 ## 📐 Wireframes
 
