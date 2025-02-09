@@ -330,17 +330,26 @@ The complete Dataflow Diagram, visually representing these components and their 
 
 ---
 
-## Application Architecture
+## 🏗️ Application Architecture Diagram: Layered Structure for Scalability and Maintainability
 
-This section details the system's layered architecture, ensuring separation of concerns and scalability.
+To illustrate the high-level structure and architectural design of the Merry Berry Smoothie & Açaí Shop application, we have created an Application Architecture Diagram (AAD). This diagram visually represents the layered architecture of our system, demonstrating a clear separation of concerns and our strategic approach to building a scalable, maintainable, and robust application.  The AAD provides an "almost flawless" understanding of the application's structural organization and component interactions.
 
-### Layers
+### 📂 Layers of the Application Architecture
 
-1. **Presentation Layer**: React.js handles user interface.
-2. **Business Logic Layer**: Node.js manages application logic.
-3. **Data Access Layer**: MongoDB stores data with Mongoose as ORM.
+Our Application Architecture Diagram clearly depicts the following distinct layers, reflecting a standard layered architectural pattern:
 
-[Insert Diagram Here]
+*   **Presentation Layer:**  This layer is responsible for handling user interactions and presenting the user interface.  As shown in the AAD, the **React.js Frontend** constitutes our Presentation Layer. It encompasses all React components, UI elements, and client-side logic responsible for rendering the user interface and handling user input.
+*   **Business Logic Layer (Application Layer):** This layer encapsulates the core application logic, business rules, and processing.  In our architecture, the **Node.js & Express Backend** forms the Business Logic Layer.  This layer houses our API endpoints, server-side logic for order processing, authentication, data validation, and interaction with the Data Access Layer. Key components within this layer include:
+    *   API Controllers (handling routes and requests)
+    *   Services (encapsulating business logic for specific features like order management, menu management, user authentication)
+    *   potentially Middleware (for authentication, request logging, etc.)
+*   **Data Access Layer:** This layer is responsible for managing data persistence and interaction with the database.  The **MongoDB Database** and **Mongoose ORM** together constitute our Data Access Layer.  Mongoose acts as an Object-Document Mapper, facilitating interaction with the MongoDB database. This layer handles database queries, data retrieval, and data storage operations.
+
+The Application Architecture Diagram visually connects these layers and indicates the flow of requests and data between them.  It demonstrates how the Presentation Layer (Frontend) interacts with the Business Logic Layer (Backend API), which in turn interacts with the Data Access Layer (MongoDB).
+
+The complete Application Architecture Diagram, visually representing these layers and their interconnections, is available as a separate image file in the [`docs/diagrams/`](./docs/diagrams/) directory, named `architecture_diagram.png`. This diagram provides a clear and comprehensive overview of the Merry Berry application's high-level architecture.
+
+[Insert AAD here]
 
 ## User Stories
 
