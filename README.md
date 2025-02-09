@@ -35,18 +35,36 @@ The Smoothie & Açaí Shop Online Ordering App aims to enhance customer experien
 - **Database**: MongoDB
 - **Design Tools**: Figma
 
-## Dataflow Diagram
+## 🗺️ Dataflow Diagram: Visualizing Data Flow within the Merry Berry System
 
-The Data Flow Diagram (DFD) visually represents how data moves through the application. It illustrates the interaction between users and the different layers of the system. Here's a detailed breakdown:
+To comprehensively illustrate the flow of data within the Merry Berry Smoothie & Açaí Shop Online Ordering App, we have developed a Dataflow Diagram (DFD). This diagram adheres strictly to standard DFD conventions and provides a clear, visual representation of how data moves through our application, from user interactions to database storage and backend processing.  The DFD is essential for understanding the system's data handling processes and ensuring data integrity throughout the application lifecycle.
 
-- **User Interaction Layer:** This is where users interact with the application via the front-end. When a user browses the menu, customizes an order, or makes a payment, these actions initiate data flow.
-- **Data Input:** User actions are input to the system. For instance, when browsing the menu, the user is requesting data from the server.
-- **Back-End Processing Layer:** The back-end, built with Node.js and Express, receives user requests. It processes these requests, interacts with the database, and sends responses back to the front-end. This layer handles business logic, such as calculating order totals and validating user inputs.
-- **Data Storage:** The database, using MongoDB, stores all data related to the application. This includes menu items, user information, and order details. Data is read from and written to the database by the back-end.
-- **Data Output:** The back-end sends processed data to the front-end. This might include displaying a menu, updating order status, or confirming a payment.
-- **Data Flow:** The DFD also shows how the data flows between these layers. For example, when a customer places an order, the flow is: user input on the front-end, request to back-end, data processing and storage in the database, and confirmation back to the front-end. The specific details of this flow will be illustrated in the diagram itself.
+### 🔑 Key Components of the Dataflow Diagram
 
-[Insert DFD Here]
+Our Dataflow Diagram explicitly identifies and depicts the following key components, adhering to standard DFD notation:
+
+*   **External Entities:**  These represent actors or systems outside of our application that interact with it.  In our DFD, the primary External Entity is the **"Customer"**, who initiates requests and receives data from the system.  We also implicitly consider the **"Payment Gateway (Stripe)"** as an external entity for payment processing.
+*   **Processes:**  Processes represent actions or transformations performed by the system on the data. Our DFD clearly identifies all critical processes within the Merry Berry application. Examples include:
+    *   `Browse Menu Items`:  The process of retrieving and displaying menu information to the customer.
+    *   `Customize Order`:  The process of handling user selections for order modifications (size, toppings, etc.).
+    *   `Add to Cart`: The process of storing selected items in the user's shopping cart.
+    *   `Process Order`: The core process encompassing order placement, validation, and storage.
+    *   `Process Payment`:  The interaction with the external Payment Gateway (Stripe) to handle transactions.
+    *   `Track Order Status`:  The process of updating and displaying the real-time status of an order.
+    *   `Manage Menu Items (Admin)`:  (Potentially depicted if admin functionalities are within scope of the DFD) The process for shop owners to update menu information.
+*   **Data Stores:** Data Stores represent where data is held or persisted within the system. Our DFD clearly indicates the primary Data Store:
+    *   `MongoDB Database`:  Representing our MongoDB database, which stores menu items, user data, order information, and reviews.
+*   **Data Flows:** Data Flows represent the movement of data between entities, processes, and data stores.  Our DFD meticulously labels each data flow with a descriptive name indicating the data being transferred. Examples include:
+    *   `Menu Item Request`: Data flow from Customer to `Browse Menu Items` process.
+    *   `Menu Item Details`: Data flow from `MongoDB Database` to `Browse Menu Items` process.
+    *   `Customization Selections`: Data flow from Customer to `Customize Order` process.
+    *   `Order Details`: Data flow between various processes and to the `MongoDB Database`.
+    *   `Payment Information`: Data flow to and from the `Process Payment` process and `Payment Gateway (Stripe)`.
+    *   `Order Status Update`: Data flow from backend processes to the Customer.
+
+The complete Dataflow Diagram, visually representing these components and their interactions, is available as a separate image file in the [`docs/diagrams/`](./docs/diagrams/) directory, named `dataflow_diagram.png`.  This diagram provides a detailed and standards-compliant view of data movement within the Merry Berry application.
+
+![Dataflow Diagram](./docs/diagrams/dataflow_diagram.png)
 
 ## Application Architecture
 
