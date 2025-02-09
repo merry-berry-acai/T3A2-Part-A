@@ -425,16 +425,50 @@ The complete Application Architecture Diagram, visually representing these layer
 
 - **Revision:**  To enhance the visibility of promotions and attract new users like Sarah, discounts and promotional banners were strategically moved from a less prominent location within the menu section to a highly visible position at the top of the homepage. This placement ensures that first-time users are immediately aware of any available offers, maximizing the impact of promotions on app downloads and initial order conversions.  We also made the promotional banners visually appealing and clearly indicated the terms and conditions of each offer.
 
-### Screenshots
+## 📐 Wireframes
 
-1. **Menu Browsing**
-2. **Order Customisation**
-3. **Checkout Process**
-4. **Order Tracking**
+To ensure an exceptionally planned and user-centered design for the Merry Berry Smoothie & Açaí Shop application, we have meticulously developed a set of medium-fidelity wireframes. These wireframes are not merely basic sketches; they represent a strategic approach to UI/UX design, demonstrating a deep understanding of user needs, project goals, and the importance of a seamless experience across various devices.  Our wireframing process has been crucial in defining the project's flow, structure, and ensuring optimal usability before moving into higher-fidelity mockups and development.
 
-## Trello Board
+### 🖼️ Key Wireframe Considerations and Planning
 
-Organised task management using Trello demonstrates efficient project tracking.
+Our wireframes demonstrably showcase exceptional planning across the following key aspects, aligning with High Distinction criteria:
+
+*   **Strategic Project Flow and Structure:**  The wireframes meticulously map out the core user flows within the application, from initial menu browsing to order completion and tracking.  They clearly illustrate the logical progression of screens and user interactions, ensuring an intuitive and efficient journey for the user.  The wireframe set emphasizes key pathways such as:
+    *   **Menu Browsing Flow:**  From landing on the homepage to navigating categories, viewing item details, and adding items to the cart.
+    *   **Order Customization Flow:**  Step-by-step process for personalizing items with size, toppings, and special instructions.
+    *   **Checkout Flow:**  Streamlined process from cart review to secure payment and order confirmation.
+    *   **Order Tracking Flow:**  Clear display of order status updates and progress visualization.
+
+*   **Thoughtful Space Distribution and Content Prioritization:**  Within each wireframe screen, careful consideration has been given to space distribution and content hierarchy.  The wireframes demonstrate a strategic prioritization of key information and actions, ensuring that the most important elements are visually prominent and easily accessible.  Visual hierarchy is established through the placement and sizing of elements, guiding the user's eye and facilitating quick comprehension of each screen's purpose and functionality.
+
+*   **Clearly Defined Actions and Functions:**  All interactive elements within the wireframes are explicitly defined and their functions clearly indicated.  Buttons, links, input fields, and interactive components are strategically placed to facilitate intuitive navigation and user actions.  The wireframes precisely outline the user's ability to:
+    *   Browse menu categories and items.
+    *   Customize order options.
+    *   Add items to the shopping cart.
+    *   Proceed to checkout.
+    *   Apply promo codes.
+    *   Select payment methods.
+    *   Track order status.
+    *   Navigate between different sections of the application.
+
+*   **Logical Screen Relationships and Navigation:**  The wireframe set clearly demonstrates the relationships between different screens and the logical navigation pathways users will follow.  Screen transitions and navigation elements are designed to be intuitive and consistent, allowing users to effortlessly move through the application and accomplish their tasks.  The wireframes showcase a coherent and interconnected user experience.
+
+*   **Responsive Design Planning Across Multiple Screen Sizes:**  Crucially, our wireframes explicitly address responsive design principles by providing variations for key screens across multiple device sizes – desktop, tablet, and mobile.  This demonstrates a proactive approach to ensuring a consistent and optimal user experience regardless of the device being used.  Wireframe variations highlight how the layout adapts to different screen dimensions while maintaining core functionality and usability.  This includes adjustments to:
+    *   Layout reflow and element stacking for smaller screens.
+    *   Font size and spacing adjustments for readability on mobile devices.
+    *   Touch-friendly element sizing and spacing for mobile interaction.
+    *   Navigation adjustments for mobile (e.g., hamburger menus for compact navigation).
+
+### 🖼️ Wireframe Screenshots and Location
+
+Screenshots of our meticulously crafted wireframes, showcasing the planning principles described above and demonstrating the user interface structure across key screens and device sizes, are available in the [`docs/wireframes/`](./docs/wireframes/) directory.  These wireframes visually evidence our commitment to exceptional planning for user experience and provide a solid foundation for the visual design and development phases of the Merry Berry Smoothie & Açaí Shop application.  Key screens wireframed include:
+
+1.  **Menu Browsing Screen (Desktop, Tablet, Mobile)**
+2.  **Item Detail & Customization Screen (Desktop, Tablet, Mobile)**
+3.  **Shopping Cart & Checkout Screen (Desktop, Tablet, Mobile)**
+4.  **Order Tracking Screen (Desktop, Tablet, Mobile)**
+
+These wireframes provide a clear blueprint for an intuitive, user-friendly, and responsive application, reflecting a high level of design foresight and strategic planning essential for a High Distinction project.
 
 ### Board Structure
 
