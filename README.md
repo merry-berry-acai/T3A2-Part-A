@@ -353,22 +353,77 @@ The complete Application Architecture Diagram, visually representing these layer
 
 ## User Stories
 
-Categorised by user roles, these stories highlight key functionalities.
+## Persona 1: Emily - The Fitness-Focused Health Seeker
 
-### Customer Perspective
+**Persona Description:** Emily, 28, is a dedicated fitness enthusiast living a busy, health-conscious lifestyle in the city.  She works as a marketing professional and prioritizes regular exercise and nutritious eating to maintain her energy levels and well-being. Emily is training for a half-marathon and is very conscious of her macronutrient intake, particularly post-workout protein and natural sugars. After intense gym sessions, she seeks quick, healthy, and customizable meal options that align with her fitness goals.  She values efficiency and appreciates technology that simplifies her healthy lifestyle choices.
 
-- As a customer, I want to browse the menu to explore available smoothies and açaí bowls.
-- As a customer, I want to customise my order to include specific add-ons.
-- As a customer, I want to track my order status to know when it's ready.
+### User Story 1: Browse Menu with Dietary Filters and Visual Appeal
 
-### Shop Owner Perspective
+- **What:** As Emily, a **Fitness-Focused Health Seeker**, I want to easily browse the menu with distinct categories (smoothies, açaí bowls, toppings), dietary filters (vegan, gluten-free, high-protein, low-sugar), and high-quality images for each item.
 
-- As a shop owner, I want to manage menu items to update prices and descriptions.
-- As a shop owner, I want to view sales reports to analyse revenue trends.
+- **Why:** So that **I can quickly discover healthy and appealing options that perfectly fit my dietary needs and training regime, allowing me to make informed and efficient choices after my workouts without spending unnecessary time searching.**  I need to ensure the food I order supports my fitness goals and dietary preferences, and a visually rich, well-organized menu will help me do this quickly.
 
-## Wireframes
+- **Revision:** Following initial user feedback and usability testing, the menu was significantly improved to include comprehensive dietary filters (vegan, gluten-free, added keto, low-sugar options) and high-resolution, mouth-watering photos for every menu item. Originally, the menu was a simple, text-based list with limited categorization, which users found overwhelming and difficult to navigate quickly when trying to make healthy choices on the go.
 
-Visual designs for key app screens ensure an intuitive user experience.
+### User Story 2: Customize Orders for Personalized Nutrition
+
+- **What:** As Emily, a **Fitness-Focused Health Seeker**, I want to precisely customize my açaí bowl or smoothie to suit my specific nutritional requirements by easily adding or removing ingredients (like almond milk, various protein powders, specific fruits, seed types, etc.) and specifying portion sizes.
+
+- **Why:** To ensure that **my purchase not only tastes fantastic but also perfectly aligns with my post-workout nutritional goals, allowing me to fine-tune the macronutrient profile (protein, carbohydrate, healthy fat content) to optimally support my training and recovery.**  Precise customization empowers me to take control of my nutrition and maximize the health benefits of my meal.
+
+- **Revision:** Based on user input and Emily's persona needs, the customization feature was significantly expanded to enable a wider range of dietary preferences and nutritional adjustments.  Beyond the original three basic selections, we incorporated options for keto-friendly, low-sugar, and high-protein customizations, reflecting the diverse dietary needs of health-conscious users like Emily.  We also improved the UI for customization to be more intuitive and visually clear, making it easier for users to see the impact of their choices on the nutritional content of their order.
+
+### User Story 3: Track Order Status in Real-Time for Time Management
+
+- **What:** As Emily, a **Fitness-Focused Health Seeker**, I want to be able to track my order status in real-time, with clear updates on each stage (e.g., "Preparing," "Blending," "Ready for Pickup"), displayed with a progress bar and timely notifications.
+
+- **Why:** To effectively plan my time after my workout and gym sessions, **allowing me to precisely time my arrival for pickup or anticipate delivery, avoid unnecessary waiting at the shop, and seamlessly integrate my healthy meal into my busy schedule without disrupting my workout routine or other commitments.**  Knowing the exact order status gives me control and reduces stress in my time-constrained day.
+
+- **Revision:**  The order tracking feature was substantially enhanced for a superior user experience by adding a visually informative progress bar that dynamically updates through each stage of order fulfillment.  We also implemented push notifications (initially planned for future iteration, but prioritized based on user feedback emphasizing the importance of real-time updates) to proactively inform users of status changes without requiring constant page refreshing.  This revision directly addresses the need for efficient time management expressed by busy, fitness-focused users like Emily.
+
+## Persona 2: John - The Busy Professional Seeking Quick & Healthy Lunch
+
+**Persona Description:** John, 35, is a busy marketing manager working long hours in a demanding corporate environment.  He values convenience and efficiency, especially during his limited lunch breaks. John is increasingly health-conscious and wants to make better food choices but often struggles to find healthy options that are also quick and easy to access near his office. He appreciates streamlined digital experiences and relies heavily on mobile ordering for lunch.
+
+### User Story 4: Quick Reorder of Favorite Items for Lunchtime Efficiency
+
+- **What:** As John, a **Busy Professional Seeking Quick & Healthy Lunch**, I would like to be able to quickly reorder my favorite smoothie or açaí bowl combinations from my past order history with just a single click or tap, directly from the homepage or order history section.
+
+- **Why:** To drastically save time during my short lunch breaks and ensure that **I can consistently get my preferred healthy and satisfying meal as quickly and effortlessly as possible, maximizing my limited break time for relaxation and recharging before returning to work.**  Reordering saves me from having to browse and customize my order each time, which is crucial when time is of the essence.
+
+- **Revision:** To maximize accessibility and user convenience for busy professionals like John, the reorder option was strategically moved from the initially less prominent account settings area to a more easily discoverable location directly on the homepage and within the order history section.  This placement ensures that frequent reordering is a primary and effortless action, aligning with the user need for speed and efficiency during lunch breaks.  We also added visual cues (like a "heart" icon on past orders) to further highlight and encourage the reorder functionality.
+
+## Persona 3: Maria - The Shop Owner Optimizing Operations
+
+**Persona Description:** Maria, 40, is the owner and manager of the Merry Berry Smoothie & Açaí Shop. She is passionate about providing healthy and delicious options to her community and is focused on efficiently managing her shop's operations to ensure customer satisfaction and profitability. Maria needs tools to streamline order management, understand customer preferences, and optimize her menu offerings.
+
+### User Story 5: Real-Time Order Management Dashboard for Operational Efficiency
+
+- **What:** As Maria, the **Shop Owner Optimizing Operations**, I need a comprehensive and real-time dashboard that allows me to efficiently view and manage all incoming online orders, track their status, and prioritize them effectively.  The dashboard should display key order details, customer notes, and order history.
+
+- **Why:** To effectively prioritize and fulfill incoming orders in a timely manner, **enabling me to optimize my shop's operations, minimize customer wait times, reduce order errors, and ultimately increase customer satisfaction and repeat business.  Real-time order visibility is crucial for efficient workflow management within my shop and ensuring smooth service during peak hours.**
+
+- **Revision:**  The order management dashboard, initially displaying only basic order details, was significantly enhanced based on Maria's operational needs and feedback.  We added key features such as customer-provided special notes (e.g., allergy information, specific requests), a readily accessible customer order history view (to anticipate regular customer preferences), and priority flags to highlight large or urgent orders.  These additions empower Maria to manage orders more proactively, personalize service, and optimize her shop's workflow for peak efficiency.
+
+## Persona 4: Sarah - The First-Time App User Seeking Easy Onboarding
+
+**Persona Description:** Sarah, 22, is a tech-savvy college student who is new to the Merry Berry app and is exploring healthy food options in her area.  She is comfortable with mobile apps and online ordering but appreciates a smooth and intuitive onboarding experience when trying a new platform. Sarah is also budget-conscious and interested in any promotions or discounts for first-time users.
+
+### User Story 6: Interactive Onboarding Tutorial for Seamless First Experience
+
+- **What:** As Sarah, a **First-Time App User Seeking Easy Onboarding**, I would need a brief, interactive tutorial that guides me through the key features of the app as soon as I launch it for the first time, showing me how to browse the menu, customize orders, and place my first order smoothly.
+
+- **Why:** To quickly feel comfortable and confident using the app without needing to search for help or figure things out on my own, **ensuring a positive first impression and encouraging me to explore the app's features and place my first order without frustration.  A good onboarding experience is essential for me to adopt a new app and become a regular user.**
+
+- **Revision:**  To significantly improve user engagement and reduce initial user friction, the onboarding tutorial was completely redesigned from a primarily text-based walkthrough to a more engaging and interactive experience.  We incorporated interactive elements, subtle animations to highlight key UI elements, and progress indicators to guide Sarah through the app's core functionalities in a user-friendly and visually appealing manner.  This revision directly addresses the need for intuitive onboarding for new users like Sarah, maximizing app adoption and first-time user conversion.
+
+### User Story 7:  Visible Discounts and Promotions to Incentivize First Order
+
+- **What:** As Sarah, a **First-Time App User Seeking Easy Onboarding**, I would want to easily see any available promotions and discounts specifically for first-time users, displayed prominently when I first open the app or browse the menu.
+
+- **Why:** To save money on my first order and feel like I'm getting good value as a new user, **incentivizing me to place my first order and explore the app's offerings.  As a budget-conscious student, discounts and promotions are a significant factor in my purchasing decisions, and clear visibility of these offers will encourage me to try Merry Berry.**
+
+- **Revision:**  To enhance the visibility of promotions and attract new users like Sarah, discounts and promotional banners were strategically moved from a less prominent location within the menu section to a highly visible position at the top of the homepage. This placement ensures that first-time users are immediately aware of any available offers, maximizing the impact of promotions on app downloads and initial order conversions.  We also made the promotional banners visually appealing and clearly indicated the terms and conditions of each offer.
 
 ### Screenshots
 
