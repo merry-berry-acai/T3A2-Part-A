@@ -60,11 +60,12 @@ Customers can personalize their orders by selecting their preferred sizes, toppi
 By enabling user reviews and ratings, the project fosters a sense of community, where customers can share their experiences and provide valuable feedback on products. This helps to continuously improve the offerings and ensures customer satisfaction.
 
 
-# Features
+## Features
 
-## 🍓 Browse Menu
+### 🍓 Browse Menu
+
 **Feature:**
-Customers can explore the menu, which includes a variety of smoothies, açaí bowls, and other products, each displayed with essential details for an engaging shopping experience.
+Enables customers to easily explore our offerings, directly supporting Objective 1 (Empower Healthy Eating) by showcasing the variety of healthy options. This is especially important for Health-Conscious Consumers and Busy Professionals who want to quickly see what's available.
 
 **Details:**
 - **Categories for Easy Navigation:** Products are grouped into categories like "Smoothies," "Açaí Bowls," and "Snacks" so customers can quickly find what they need.
