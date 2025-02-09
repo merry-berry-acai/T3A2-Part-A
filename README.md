@@ -283,16 +283,19 @@ The **Merry Berry Smoothie & Açaí Shop** platform is tailored to meet the need
 - **In-store pickup & delivery tracking** for added convenience.  
 
 
-### Tech Stack
+## Tech Stack
 
-- **Front-end**: React.js
-- **Back-end**: Node.js & Express
-- **Database**: MongoDB
-- **Design Tools**: Figma
+- **Front-end**: `React.js`
+- **Back-end**: `Node.js & Express`
+- **Database**: `MongoDB`
+- **Design Tools**: `Figma`
 
-## Dataflow Diagram
+### Tech Stack Justification
+We have chosen `React.js` for the front-end to build a dynamic and responsive user interface, crucial for reaching our diverse target audience across devices. 
+`Node.js with Express` provides a scalable and efficient back-end, ideal for handling real-time order updates and secure transactions. 
+`MongoDB`'s NoSQL nature allows for flexible data schemas, accommodating the evolving needs of our menu and user data. 
+`Figma` was selected for collaborative and iterative wireframing and UI design.
 
-The DFD outlines the flow of data within the system, showing interactions between users and the application layers.
 
 ### Key Components
 
