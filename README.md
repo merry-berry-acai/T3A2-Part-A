@@ -70,7 +70,8 @@ It handles data validation, processing, and interaction with the data access lay
 - It uses MongoDB to store the data with Mongoose as the Object Relational Mapper (ORM).
 - It is responsible for handling database operations such as CRUD (Create, Read, Update, Delete).
 
-[Insert Diagram Here]
+![Application Architecture Diagram](./docs/AAD.png)
+
 
 ## User Stories
 
